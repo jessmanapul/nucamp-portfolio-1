@@ -1,44 +1,110 @@
 :root {
---bs-bg-color: #f1f1f1;
---bs-dark-gray: #1d1d1d;
+--bs-rust: #7a3e28;
+--bs-white: #f8f8f8;
+--bs-brown: #4c2415;
 }
 
 body {
-    background-color: var(--bs-bg-color);
+    background-color: var(--bs-white);
+    font-family: 'DM Sans', sans-serif;
+    color: var(--bs-brown);
 }
 
 #myNav {
-    border-bottom: 1px solid var(--bs-dark-gray);
-    background-color: var(--bs-bg-color);
+    background-color: var(--bs-rust);
+    color: var(--bs-white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: .9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#myNav a{
+    color: var(--bs-white);
+    font-weight: 200;
+}
+
+#myNav a:hover {
+    text-decoration: underline;
+}
+
+.logo-text {
+    font-family: "DM Serif Display", serif;
 }
 
 #hero {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    border-bottom: 1px solid var(--bs-dark-gray);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--bs-rust);
+    color: var(--bs-white);
 }
 
 .hero-heading {
-    text-transform: uppercase;
-    font-size: 3rem;
-    letter-spacing: 2px;
+    color: var(--bs-white);
+    font-size: 4rem;
+
+    @media screen and (max-width: 767px) {
+        font-size: 2rem;
+    }
 }
 
 .hero-subheading {
     margin-bottom: 0;
     font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--bs-rust);
+    font-family: "DM Serif Display", serif;
+}
+
+p {
+    font-weight: 200;
+}
+
+.p-large {
+    font-size: 1.3rem;
+}
+
+.headshot {
+    border-radius: 50%;
+}
+
+.button-dark {
+    background-color: var(--bs-rust);
+    color: var(--bs-white);
+    font-weight: 200;
+}
+
+.button-dark:hover {
+    background-color: var(--bs-brown);
+    color: var(--bs-white);
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+    flex: 1 0 auto;
+}
+
+.card p {
+    color: #4c2415;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: .9rem;
 }
 
 footer {
-    border-top: 1px solid var(--bs-dark-gray);
+    background-color: var(--bs-rust);
+    color: var(--bs-white);
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-footer h5 {
-    font-size: .9rem;
-    text-transform: uppercase;
-    font-weight: 700;
+footer h5, footer i {
+    color: var(--bs-white);
+}
+
+footer i:hover {
+    color: var(--bs-brown);
 }
